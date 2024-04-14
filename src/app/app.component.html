@@ -1,0 +1,82 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div class="top-bar">
+
+      <div class="logo">
+        <a [routerLink]="['/']">
+          <img src="assets/trebol-emblem.png" alt="logo-trello" height="80px" >
+        </a>
+      </div>
+      <button class="desplegable" (click)="toggleFuncion()">
+        Funciones <img class="flecha-abajo" src="assets\bx-chevron-down.svg" alt="flecha-abajo">
+      </button>
+      <button class="desplegable" (click)="toggleFuncion()">
+        Soluciones <img class="flecha-abajo" src="assets\bx-chevron-down.svg" alt="flecha-abajo">
+      </button>
+      <button class="desplegable" (click)="toggleFuncion()">
+        Planes <img class="flecha-abajo" src="assets\bx-chevron-down.svg" alt="flecha-abajo">
+      </button>
+      <button class="desplegable" (click)="toggleFuncion()">
+        Precios <img class="flecha-abajo" src="assets\bx-chevron-down.svg" alt="flecha-abajo">
+      </button>
+      <button class="desplegable" (click)="toggleFuncion()">
+        Recursos <img class="flecha-abajo" src="assets\bx-chevron-down.svg" alt="flecha-abajo">
+      </button>
+
+      <button class="otros">Iniciar Sesion</button>
+      <button class="otros trelloOficial" (click)="abrirPaginaTrello()" >Trello Oficial</button>
+    </div>
+    
+    <div class="subMenu" *ngIf="menuFuncion">
+      
+      <div class="caja1">
+        <h3 class="tituloOpciones"> Opciones de menu 1</h3>
+        <hr>
+        <div class="opciones">
+          <div class="opcion">
+            <h4> Titulo </h4>
+            <p>contenido 1</p>
+          </div>
+          <div class="opcion">
+            <h4> Titulo </h4>
+            <p>contenido 2</p>
+          </div>
+          <div class="opcion">
+            <h4> Titulo </h4>
+            <p>contenido 3</p>
+          </div>
+          <div class="opcion">
+            <h4> Titulo </h4>
+            <p>contenido 4</p>
+          </div>
+          <div class="opcion">
+            <h4> Titulo </h4>
+            <p>contenido 5</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja2">
+        <h3 class="tituloOpciones"> Opciones de menu 2</h3>
+        <hr>
+        <div class="opciones">
+          <div class="opcion">
+            <h4> Titulo </h4>
+            <p>contenido 1</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+
+    
+    
+
+    <router-outlet></router-outlet>
+    
+  </body>
+</html>

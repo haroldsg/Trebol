@@ -1,0 +1,119 @@
+
+.top-bar{
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    transition-duration: 500ms;
+}
+
+.top-bar:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.logo{
+    padding-top: 0px;
+    padding-left: 11px;
+}
+
+button {
+    background-color: transparent; /* Color de fondo (puedes cambiarlo) */
+    color: #172B4D; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: sans-serif;
+    padding: 20px 16px 16px;
+    
+}
+
+.desplegable{
+    transition-duration: 300ms;
+    padding: 35px 16px 16px;
+    padding-right: 5px;
+    display: flex;
+}
+
+.desplegable:hover{
+    color: rgb(0, 89, 255);
+}
+
+.botonDesplegado {
+    height: 500px;
+    width: 100%;
+    
+}
+
+.otros{
+    font-size: 24px;
+    padding: 8px 24px;
+    position: relative;
+    left: 12%;
+}
+
+.trelloOficial{
+    background-color: #0065FF;
+    color: antiquewhite;
+
+}
+
+.trelloOficial:hover{
+    background-color: #043988;
+}
+
+.subMenu{
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    
+}
+
+.caja1{
+    height: 65%;
+    width: 60%;
+    background: rgb(206, 196, 196);
+    padding-left: 80px;
+    padding-top: 30px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.caja2{
+    height: 65%;
+    width: 40%;
+    background: rgb(172, 89, 172);
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.tituloOpciones{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #101e35;
+    font-style: bold;
+
+}
+.opciones{
+    height: 350px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.opcion{
+    height: 130px;
+    width: 210px;
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
